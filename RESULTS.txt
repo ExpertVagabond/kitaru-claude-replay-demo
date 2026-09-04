@@ -1,0 +1,20 @@
+
+run-eager-prompt.json  (run 01a06e29-f822-7ef3-bc6c-ca74a31b1f9d)
+incident   baseline  candidate   base $   cand $  note
+INC-1042   pass      pass        0.0149   0.0150  INC-1042: paged payments exactly once
+INC-1043   pass      pass        0.0137   0.0144  INC-1043: paged discovery exactly once
+INC-1044   pass      pass        0.0110   0.0117  INC-1044: correctly did not page
+INC-1045   pass      pass        0.0141   0.0145  INC-1045: paged identity exactly once
+INC-1046   pass      FAIL        0.0120   0.0157  INC-1046: paged ['payments'] for a healthy service
+INC-1047   pass      pass        0.0139   0.0140  INC-1047: paged platform exactly once
+total      6/6       5/6         0.0796   0.0852  cost +7%
+
+run-haiku-candidate.json  (run 01a06e27-9e69-74e2-96d3-3bfaba52bb9d)
+incident   baseline  candidate   base $   cand $  note
+INC-1042   pass      pass        0.0149   0.0113  INC-1042: paged payments exactly once
+INC-1043   pass      pass        0.0137   0.0112  INC-1043: paged discovery exactly once
+INC-1044   pass      pass        0.0110   0.0067  INC-1044: correctly did not page
+INC-1045   pass      pass        0.0141   0.0108  INC-1045: paged identity exactly once
+INC-1046   pass      pass        0.0120   0.0073  INC-1046: correctly did not page
+INC-1047   pass      pass        0.0139   0.0099  INC-1047: paged platform exactly once
+total      6/6       6/6         0.0796   0.0571  cost -28%
