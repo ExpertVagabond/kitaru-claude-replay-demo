@@ -2,6 +2,8 @@
 
 Record a real Claude agent run, freeze the recordings into a regression suite, replay them against a cheaper model and against a prompt edit, and let an evaluator say which change is safe to ship.
 
+**[Watch the 3-minute narrated walkthrough (walkthrough.mp4)](walkthrough.mp4)**, or the silent 96-second terminal recording below.
+
 ![96-second terminal demo: record one run, then the two replay verdicts](demo.gif)
 
 Built on the [Kitaru](https://github.com/zenml-io/kitaru) Claude Agent SDK adapter the day it merged (`kitaru-claude-agent-sdk` 0.1.0rc0, [PR 940](https://github.com/zenml-io/kitaru/pull/940), 2026-09-04). It is not on PyPI yet, so this repo pins the merge commit.
