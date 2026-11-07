@@ -29,7 +29,7 @@ The same file is both the recording program and the replay program. Under a Kita
 ## The two experiments
 
 - **haiku-candidate**: same prompt, `claude-sonnet-5` swapped for `claude-haiku-4-5`. Question: can we cut cost without changing decisions?
-- **loose-prompt**: same model, system prompt with the "never page a healthy service" rule deleted. Question: does the evaluator catch a prompt regression before it ships?
+- **eager-prompt**: same model, system prompt with an added rule to page whenever a service has a recent deploy. Question: does the evaluator catch a plausible-sounding prompt regression before it ships?
 
 Both share one fail-closed tool policy (`scripts/create_experiments.py`): the default is an empty static policy with `on_miss: fail`, so any tool the policy does not name stops the replay instead of quietly running live.
 
